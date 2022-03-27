@@ -1,0 +1,73 @@
+.container {
+	padding-left: calc((100% - 144rem) /2);
+	padding-right: calc((100% - 144rem) /2);
+}
+
+.large-text {
+	font-size: 2.4rem;
+	line-height: 3rem;
+}
+
+.small-text {
+	font-size: 2rem;
+	line-height: 2.6rem;
+}
+
+.helper-text {
+	font-size: 1.6rem;
+	line-height: 2.2rem;;
+}
+
+@include desktop1920 {
+	.container {
+		padding-left: calc((100% - 140rem) /2);
+		padding-right: calc((100% - 140rem) /2);
+	}
+}
+
+@include desktop {
+	.container {
+		padding-left: 8rem;
+		padding-right: 8rem;
+	}
+}
+
+@include tablet {
+	.container {
+		padding-left: 6rem;
+		padding-right: 6rem;
+	}
+}
+
+@include mobile {
+	.container {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	.large-text {
+		line-height: 2.6rem;
+	}
+
+	.small-text {
+		line-height: 2.2rem;
+	}
+
+	.helper-text {
+		line-height: 1.6rem;
+	}
+}
+
+@include mobile468 {
+	.container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@include mobile375 {
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}

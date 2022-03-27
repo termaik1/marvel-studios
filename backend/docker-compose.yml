@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  db:
+    build:
+      context: ./docker
+    container_name: nest-db
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: 'password'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_DB: 'postgres'
+    volumes:
+      - ./data:/var/lib/postgresql/data
